@@ -25,7 +25,7 @@ tags: [jekyll]
 
 ---
 
-1. repository에서 브랜치명을 `main` -> `master`로 변경한다. `pages-deploy.yml`에서도 마찬가지로 변경한다. 이 파일은 `.github > workflows` 디렉토리 안에 있음. (없으면 [tutorial]('https://chirpy.cotes.page/posts/getting-started/#deploy-by-using-github-actions') 다시 읽고 생성해보길)
+1. repository에서 브랜치명을 `main` -> `master`로 변경한다. `pages-deploy.yml`에서도 마찬가지로 변경한다. 이 파일은 `.github > workflows` 디렉토리 안에 있음. (없으면 [tutorial](https://chirpy.cotes.page/posts/getting-started/#deploy-by-using-github-actions) 다시 읽고 생성해보길)
    <br/>
 
    ```yml
@@ -52,6 +52,6 @@ tags: [jekyll]
 ## 레퍼런스
 -----
 
-[참고한 사이트1]('https://github.com/cotes2020/jekyll-theme-chirpy/issues/502')
+[참고한 사이트1](https://github.com/cotes2020/jekyll-theme-chirpy/issues/502)
 
-[참고한 사이트2]('https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site')
+[참고한 사이트2](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
