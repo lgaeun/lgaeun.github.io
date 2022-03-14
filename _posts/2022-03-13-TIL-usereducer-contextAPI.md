@@ -25,7 +25,7 @@ const CircleSizeContext = React.createContext();
 function CircleSizeProvider(props) {
   const [circleSize, circleSizeChange] = useState(20);
   return (
-    <CircleSizeContext.Provider value={{ circleSize, circleSizeChange }}>
+    <CircleSizeContext.Provider value={% raw %}{{ circleSize, circleSizeChange }}{% endraw %}>
       {props.children}
     </CircleSizeContext.Provider>
   );
@@ -37,12 +37,12 @@ function Circle() {
   return (
     <div
       onClick={() => circleSizeChange(circleSize + 20)}
-      style={{
+      style={% raw %}{{
         width: circleSize + "px",
         height: circleSize + "px",
         borderRadius: "50%",
         background: "red",
-      }}
+      }}{% endraw %}
     />
   );
 }
@@ -52,7 +52,7 @@ function App() {
     <CircleSizeProvider>
       <div className="App">
         <h1>Click circle</h1>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={% raw %}{{ display: "flex", justifyContent: "center" }}{% endraw %}>
           <Circle />
         </div>
       </div>
